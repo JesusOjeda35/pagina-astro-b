@@ -17,34 +17,105 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<header>
+			<div class="top-header container">
+				<img src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.73/mercadolibre/logo_large_25years_v2.png" alt="Logo ML">
+				<div class="input">
+				<input type="text" placeholder="Busca productos, marcas y más...">
+				<button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTt2Mj8dwtrYLcbqDn-nDazo9p_uU7lQ8phQ&s" alt=""></button>
+				</div>
+				<p>Publicidad</p>	
+			</div>
+		</header>
+		<div class="banner">
+
+		</div>
+		<div class="cards container ">
+			<div class="card">
+				1
+			</div>
+			<div class="card">
+				2
+			</div>
+			<div class="card">
+				3
+			</div>
+			<div class="card">
+				4
+			</div>
+			<div class="card">
+				5
+			</div>
+			<div class="card">
+				6
+			</div>
+		</div>
+		<!-- <slot /> -->
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+<style>
+	html, body{
+		padding: 0;
+		margin: 0;
+		background-color: #969393;
 	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
+	header{
+		height: 80px;
+		background: #ecde1a;
+		padding-top: 12px;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+	header img{
+		width: 120px;
 	}
+	header input{
+		box-sizing: border-box;
+		display: inline-block;
+		width: 85%;
+		padding: 10px 8px;
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+		border: none;
+		height: 36px;
+		/* border: 1px solid #969393; */
+		outline: none;
+	}
+	header button{
+		display: inline-block;
+		width: 14%;
+		border: none;
+		background: #fff;
+		height: 36px;
+		border-top-right-radius:3px;
+		border-bottom-right-radius: 3px;
+	}
+	header button img{
+		width: 80%;
+	}
+	.input {
+		display: flex;
+		align-items: center;
+	}
+	.banner{
+		height: 280px;
+		background: linear-gradient(to bottom,#ecde1a 60%,#969393 100%);
+	}
+	.container{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.cards{
+		gap: 10px;
+		display: flex;
+		margin-top: -80px;
+		height: 240px;
+	}
+	.card{
+		flex-grow: 1;
+		background-color: #fff;
+		border-radius: 6px;
+	}
+	.top-header{
+		column-count: 3;
+	}
+
 </style>
