@@ -19,103 +19,139 @@ const { title } = Astro.props;
 	<body>
 		<header>
 			<div class="top-header container">
-				<img src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.73/mercadolibre/logo_large_25years_v2.png" alt="Logo ML">
+				<img
+					src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.73/mercadolibre/logo_large_25years_v2.png"
+					alt="LOGO"
+				/>
 				<div class="input">
-				<input type="text" placeholder="Busca productos, marcas y más...">
-				<button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTt2Mj8dwtrYLcbqDn-nDazo9p_uU7lQ8phQ&s" alt=""></button>
+					<input placeholder="Escribe algo y encuentra" type="text" />
+					<button>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+							></path>
+						</svg>
+					</button>
 				</div>
-				<p>Publicidad</p>	
+
+				<p>publicidad</p>
 			</div>
 		</header>
-		<div class="banner">
+		<div class="to-60% from-[#ffe600] to-[#ebebeb] h-72 bg-gradient-to-b"></div>
+		<div class="-mt-20 h-72 flex gap-3 max-w-[1200px] mx-auto" >
+			<div class="min-w-44 bg-white rounded-md grow">1</div>
+			<div class="min-w-44 bg-white rounded-md grow">2</div>
+			<div class="min-w-44 bg-white rounded-md grow">3</div>
+			<div class="min-w-44 bg-white rounded-md grow">4</div>
+			<div class="min-w-44 bg-white rounded-md grow">5</div>
+			<div class="min-w-44 bg-white rounded-md grow">6</div>
+		</div>
+		<div
+			class="group items-center transition-colors hover:bg-blue-600 hover:cursor-pointer rounded inline-flex px-4 py-2 text-white bg-blue-500"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="size-6 mr-1 mt-1 group-hover:animate-spin"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+				></path>
+			</svg>
 
+			Presioname!
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="size-4 mt-[4px] ml-1"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+			</svg>
 		</div>
-		<div class="cards container ">
-			<div class="card">
-				1
-			</div>
-			<div class="card">
-				2
-			</div>
-			<div class="card">
-				3
-			</div>
-			<div class="card">
-				4
-			</div>
-			<div class="card">
-				5
-			</div>
-			<div class="card">
-				6
-			</div>
-		</div>
-		<!-- <slot /> -->
 	</body>
 </html>
 <style>
-	html, body{
+	html,
+	body {
 		padding: 0;
 		margin: 0;
-		background-color: #969393;
+		background-color: #ebebeb;
 	}
-	header{
+	header {
+		background: #ffe600;
 		height: 80px;
-		background: #ecde1a;
 		padding-top: 12px;
 	}
-	header img{
+	header img {
 		width: 120px;
+		padding-top: 12px;
 	}
-	header input{
+	header input {
+		width: 80%;
 		box-sizing: border-box;
-		display: inline-block;
-		width: 85%;
+		display: inline;
 		padding: 10px 8px;
 		border-top-left-radius: 3px;
 		border-bottom-left-radius: 3px;
 		border: none;
-		height: 36px;
-		/* border: 1px solid #969393; */
 		outline: none;
-	}
-	header button{
-		display: inline-block;
-		width: 14%;
-		border: none;
-		background: #fff;
 		height: 36px;
-		border-top-right-radius:3px;
+	}
+	header button {
+		display: inline;
+		width: 32px;
+		border: none;
+		background: white;
+		height: 36px;
+		border-top-right-radius: 3px;
 		border-bottom-right-radius: 3px;
 	}
-	header button img{
-		width: 80%;
-	}
+
 	.input {
 		display: flex;
 		align-items: center;
 	}
-	.banner{
+	/* .banner {
 		height: 280px;
-		background: linear-gradient(to bottom,#ecde1a 60%,#969393 100%);
-	}
-	.container{
+		background: linear-gradient(to bottom, #ffe600 70%, #ebebeb 100%);
+	} */
+	/* .container {
 		max-width: 1200px;
 		margin: 0 auto;
-	}
-	.cards{
-		gap: 10px;
-		display: flex;
+	} */
+	/* .cards {
 		margin-top: -80px;
 		height: 240px;
-	}
-	.card{
-		flex-grow: 1;
+		display: flex;
+		gap: 10px;
+	} */
+	/* .card {
+		min-width: 180px;
 		background-color: #fff;
 		border-radius: 6px;
-	}
-	.top-header{
+		flex-grow: 1;
+	} */
+	.top-header {
 		column-count: 3;
 	}
-
 </style>
