@@ -7,7 +7,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="p-0 m-0 bg-[#ebebeb]">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -16,16 +16,108 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<header>
-			<div class="top-header container">
+	<body class="p-0 m-0 bg-[#ebebeb]">
+		<header class="bg-[#ffe600] h-20 pt-3">
+			<div class="columns-3 max-w-[1200px] mx-auto">
 				<img
+					class="w-[120px] pt-3"
 					src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.73/mercadolibre/logo_large_25years_v2.png"
 					alt="LOGO"
 				/>
-				<div class="input">
-					<input placeholder="Escribe algo y encuentra" type="text" />
-					<button>
+				<div class="items-center flex">
+					<div class="group inline-block absolute top-16
+					left-[600px]">
+						<a href="#" class="group px-3">Categorias</a>
+						<div
+							class="left-16 rounded pt-3 w-32 group-hover:block hidden top-8 bg-red-500 absolute"
+						>
+							<div
+								class="absolute rotate-45 -top-1 left-2 bg-red-500 size-4"
+							>
+							</div>
+							<div class="">
+								<div class="ml-3 hover:bg-slate-500">
+									opcion1
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-3 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+								<div class="pt-2 pb-2 ml-3 hover:bg-slate-500">
+									opcion2
+								</div>
+							</div>
+						</div>
+						<div class="inline">
+							<a class="m-2" href="">Ofertas</a>
+							<a class="m-2" href="">Cupones </a>
+							<a class="m-2" href="">Supermercado</a>
+							<a class="m-2" href="">Moda</a>
+							<a class="m-2" href="">Vender</a>
+							<a class="m-2" href="">Ayuda / PQR</a>
+						</div>
+					</div>
+					<input
+						class="w-[80%] box-border inline items-center rounded-l-[3px] border-none outline-none h-9 px-[8px] py-[10px]"
+						placeholder="Escribe algo y encuentra"
+						type="text"
+					/>
+					<button
+						class="inline w-8 border-none bg-white h-9 rounded-r-[3px]"
+					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -42,12 +134,35 @@ const { title } = Astro.props;
 						</svg>
 					</button>
 				</div>
-
-				<p>publicidad</p>
+				<div class="group relative inline-block">
+					<a href="" class="bg-green-500">Publicidad</a>
+				</div>
+				<div class="inline-block absolute bottom-[830px] pl-10">
+				<a class="px-4" href="#">Crea tu cuenta</a>
+				<a class="px-2" href="#">Ingresa</a>
+				<a class="px-2" href="#">Mis compras</a>
+				<button class="px-2">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="size-6"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+						></path>
+					</svg>
+				</button>
+				</div>
 			</div>
 		</header>
-		<div class="to-60% from-[#ffe600] to-[#ebebeb] h-72 bg-gradient-to-b"></div>
-		<div class="-mt-20 h-72 flex gap-3 max-w-[1200px] mx-auto" >
+		<div class="to-60% from-[#ffe600] to-[#ebebeb] h-72 bg-gradient-to-b">
+		</div>
+		<div class="-mt-20 h-72 flex gap-3 max-w-[1200px] mx-auto">
 			<div class="min-w-44 bg-white rounded-md grow">1</div>
 			<div class="min-w-44 bg-white rounded-md grow">2</div>
 			<div class="min-w-44 bg-white rounded-md grow">3</div>
@@ -90,23 +205,24 @@ const { title } = Astro.props;
 		</div>
 	</body>
 </html>
+
 <style>
-	html,
+	/*html,
 	body {
 		padding: 0;
 		margin: 0;
 		background-color: #ebebeb;
-	}
-	header {
+	}*/
+	/*header {
 		background: #ffe600;
 		height: 80px;
 		padding-top: 12px;
-	}
-	header img {
+	}*/
+	/*header img {
 		width: 120px;
 		padding-top: 12px;
-	}
-	header input {
+	}*/
+	/*header input {
 		width: 80%;
 		box-sizing: border-box;
 		display: inline;
@@ -116,8 +232,8 @@ const { title } = Astro.props;
 		border: none;
 		outline: none;
 		height: 36px;
-	}
-	header button {
+	}*/
+	/*header button {
 		display: inline;
 		width: 32px;
 		border: none;
@@ -125,12 +241,12 @@ const { title } = Astro.props;
 		height: 36px;
 		border-top-right-radius: 3px;
 		border-bottom-right-radius: 3px;
-	}
+	}*/
 
-	.input {
+	/*.input {
 		display: flex;
 		align-items: center;
-	}
+	}*/
 	/* .banner {
 		height: 280px;
 		background: linear-gradient(to bottom, #ffe600 70%, #ebebeb 100%);
@@ -151,7 +267,7 @@ const { title } = Astro.props;
 		border-radius: 6px;
 		flex-grow: 1;
 	} */
-	.top-header {
+	/*.top-header {
 		column-count: 3;
-	}
+	}*/
 </style>
